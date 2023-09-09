@@ -1,0 +1,49 @@
+edad = int(input("inserta tu edad"))
+if edad>21:
+  print("el usuario es mayor a 21 años")
+else:
+  print("el usuario no es mayor a 21 años")
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if(a>=b and a>=c):
+  print(a)
+elif (b>=a and b>=c):
+  print(b)
+else :
+  print(c)
+
+  a =input()
+if(len(a) == 10):
+  print("este es un numero de telefono")
+else:
+  print("este no es un numero de telefono")
+
+peso = float(input("introducir su peso:"))
+altura = float(input("metros:"))
+IMC = peso/ (altura*altura)
+
+print(IMC)
+
+if IMC <=18.5:
+    print("peso inferior al normal")
+elif IMC >= 18.5 and IMC<= 24.9:
+    print( "El IMC es el normal ")
+elif IMC>= 25 and IMC<= 29.9:
+    print("Sobrepeso")
+else:
+    print("obesidad")
+
+
+fib =[1,1]
+
+print(fib)
+
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)
+fib.insert(len(fib),fib(len(fib))-1) + fib(len(fib)-2)

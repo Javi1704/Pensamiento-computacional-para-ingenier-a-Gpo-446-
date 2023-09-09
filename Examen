@@ -1,0 +1,50 @@
+#1
+Current=int(input())
+Resistance=int(input())
+
+Voltage=(Current * Resistance)
+print(Voltage)
+
+#2
+Precio_2022=int(input())
+Precio_2023=8000
+
+diferencia=(Precio_2023-Precio_2022)
+
+incremento= ((diferencia/Precio_2022)*100)
+
+print(diferencia)
+print(incremento)
+
+#3 
+a = int(input())
+
+if a % 2 == 0:
+        print(True)
+else:
+        print(False)
+
+#4
+list=("coran","Biblia","principito","el diario de greg","programacion en python","algoritmos avanzados","algebra de baldor")
+new_list=("programacion en python","principito","Biblia","el diario de greg","algoritmos avanzados","Harry potter","Injustice","Big nate","Como agua para el chocolate")
+print(new_list)
+
+#5
+P_h=int(input())
+a_h=int(input())
+
+P_p=int(input())
+a_p=int(input())
+
+area_hexagono=((P_h*a_h)/2)
+area_pentagono=((P_p*a_p)/2)
+
+print(area_hexagono)
+print(area_pentagono)
+
+#12
+B=int(input())
+H=int(input())
+
+area_triangulo =((B*H)/2)
+print(area_triangulo)

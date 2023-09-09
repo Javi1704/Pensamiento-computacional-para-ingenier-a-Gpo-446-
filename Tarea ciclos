@@ -1,0 +1,90 @@
+#1
+numero = int(input("Ingrese un número: "))
+sum = 0
+print("La suma de 0 a", numero, "es:", sum+numero)
+
+#2
+sum = 0
+amount_of_tries = 1
+
+while True:
+    numero = int(input("Ingrese un número (0 para finalizar): "))
+    if numero == 0:
+        break
+    sum += numero
+    amount_of_tries += 1
+
+if amount_of_tries == 0:
+    print("error.")
+else:
+    promedio = sum / amount_of_tries
+    print("El promedio :", promedio)
+
+#3
+def crear_lista_compras():
+    n = int(input("cantidad de artículos: "))
+    articulos = []
+
+    for i in range(n):
+        articulo = input(f"artículo {i+1}: ")
+        articulos.append(articulo)
+
+    print("\nLista de compras ordenada:")
+    for articulo in sorted(articulos):
+        print(articulo)
+
+crear_lista_compras()
+
+#4
+def filtrar_pares(lista):
+    numeros_pares = [numero for numero in lista if numero % 2 == 0]
+    return numeros_pares
+
+n = int(input("cantidad de números en la lista: "))
+numeros = []
+
+for _ in range(n):
+    numero = int(input("número: "))
+    numeros.append(numero)
+
+numeros_pares = filtrar_pares(numeros)
+
+print("Números pares:")
+print(numeros_pares)
+
+#5
+def filtrar_vocales(cadena):
+    vocales = "aeiouAEIOU"
+    vocales_encontradas = [caracter for caracter in cadena if caracter in vocales]
+    return ''.join(vocales_encontradas)
+
+entrada = input("cadena de texto: ")
+
+vocales_filtradas = filtrar_vocales(entrada)
+
+print("Vocales:")
+print(vocales_filtradas)
+
+#6
+def es_divisible_entre_243(numero):
+    return numero % 243 == 0
+
+num = int(input("Ingrese un número: "))
+
+if es_divisible_entre_243(num):
+    print(f"El número {num} es divisible entre 243.")
+else:
+    print(f"El número {num} no es divisible entre 243.")
+
+#7
+def multiplicarString(cadena, n):
+    if n <= 0:
+        return ""
+    return cadena * n
+
+cadena = input("palabra: ")
+n = int(input("numero: "))
+
+resultado = multiplicarString(cadena, n)
+print("Resultado:", resultado)
+

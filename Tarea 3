@@ -1,0 +1,69 @@
+#1
+mes = input("Introduce un mes: ")
+
+if mes in ("enero", "marzo", "mayo", "julio", "agosto", "octubre", "diciembre"):
+    dias = 31
+elif mes in ("abril", "junio", "septiembre", "noviembre"):
+    dias = 30
+elif mes == "febrero":
+    dias = 28
+if dias:
+    print(f"El mes de {mes.capitalize()} tiene {dias} días.")
+
+#2
+dia = input("Introduce un día de la semana: ")
+
+dias= ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+
+if dia in dias:
+    posicion = dias.index(dia) + 1
+    print(posicion)
+
+#3
+año = int(input("Introduce un año: "))
+
+if año % 4 == 0:
+    print("Bisiesto")
+else:
+    print("No bisiesto")
+
+#4
+numero = int(input("Introduce un número entero: "))
+
+clasificacion = ""
+
+if numero > 0:
+    clasificacion = "positivo"
+else:
+    clasificacion = "negativo"
+
+if numero % 2 == 0:
+    if clasificacion:
+        clasificacion += ", par"
+    else:
+        clasificacion += "par"
+
+if numero < 100:
+    if clasificacion:
+        clasificacion += " y menor que 100"
+    else:
+        clasificacion += "menor que 100"
+
+print( clasificacion)
+
+#5
+arreglo = ['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si']
+
+secuencia = [arreglo[6], arreglo[6], arreglo[0], arreglo[1], arreglo[1], arreglo[0], arreglo[6], arreglo[5], arreglo[4], arreglo[4], arreglo[5], arreglo[6], arreglo[6], arreglo[5], arreglo[5]]
+
+resultado = ' '.join(secuencia)
+print(resultado)
+
+#6
+arreglo = ["Jose Miguel", "Carlos", "Manuel", "Memo"]
+
+elemento = input("Introduce un string: ")
+
+estaenarreglo = elemento in arreglo
+
+print(estaenarreglo)

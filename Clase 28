@@ -1,0 +1,18 @@
+import random
+n = random.randint(0,1000)
+print(n)
+
+import random
+randomlist = random.sample(range(1, 300), 10)
+print(randomlist)
+
+def max_divisor(numero1, numero2):
+    while numero2 != 0:
+        numero1, numero2 = numero2, numero1 % numero2
+    return numero1
+
+num1 = int(input(" primer número: "))
+num2 = int(input(" segundo número: "))
+
+resultado = max_divisor(num1, num2)
+print(f" máximo divisor común es {resultado}")
